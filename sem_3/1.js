@@ -5,8 +5,8 @@
 // вывести в alert сообщение с текстом (пример): Цельсий: 21, Фаренгейт: 69.8
 
 
-const inputTemp = Number.parseInt(prompt('Введите температуру в градусах Цельсия: '));
-function getFarengate(a) {
-    return Math.floor(((9 / 5) * a + 32) * 100) / 100;
+const inputTemp = Number.parseFloat(prompt('Введите температуру в градусах Цельсия: '));
+function getFarengate(celsius) {
+    return (9 / 5) * celsius + 32;
 }
-alert(`Градусы Цельсия: ${inputTemp}\nГрадусы Фаренгейт: ${getFarengate(inputTemp)}`);
+alert(`Градусы Цельсия: ${inputTemp}\nГрадусы Фаренгейт: ${Math.floor(getFarengate(inputTemp)*100)/100}`);

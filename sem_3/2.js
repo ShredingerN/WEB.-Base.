@@ -5,8 +5,7 @@
 
 
 const userName = prompt('Как Вас величать?');
-function grettings(n) {
-    return msg = `Здравия, ${n}!!`
-};
-grettings(userName)
-console.log(msg);
+function grettings(name) {
+    console.log(`Здравия, ${name}!!`);
+}
+grettings(userName);
